@@ -46,9 +46,6 @@
             </tr>
             </thead>
             <tbody>
-            <?php
-            while ($red = $result->fetch_array()) {
-                ?>
                 <tr>
                     <td><?php echo $red["predmet"] ?></td>
                     <td><?php echo $red["katedra"] ?></td>
@@ -63,7 +60,6 @@
 
                 </tr>
                 <?php
-            }
             ?>
             </tbody>
         </table>
@@ -133,7 +129,7 @@
 
 
 
- </div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="izmeniModal" role="dialog">
     <div class="modal-dialog">
@@ -155,7 +151,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input id="predmet" type="text" name="predmet" class="form-control"
-                                           placeholder="Predmet*" value=""/>
+                                        placeholder="Predmet*" value=""/>
                                 </div>
                                 <div class="form-group">
                                     <input id="katedra" type="text" name="katedra" class="form-control"
